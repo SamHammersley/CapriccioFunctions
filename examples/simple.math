@@ -1,0 +1,4 @@
+(sum 3
+  (ifelse (morethan (min 4 5) 10)
+    (sum 8 (tri 5))
+    (ifelse (morethan (max 9 12) 88) 90 12)))

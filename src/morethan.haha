@@ -1,0 +1,11 @@
+function morethan(x : Z, y : Z) : Z
+postcondition (x > y /\ morethan = 1) \/ (x <= y /\ morethan = 0)
+var z : Z
+begin
+    if x > y then
+        z := 1
+    else
+        z := 0
+    { (x > y /\ z = 1) \/ (x <= y /\ z = 0) }
+    morethan := z
+end
