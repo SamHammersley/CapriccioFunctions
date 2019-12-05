@@ -3,13 +3,13 @@ postcondition (x != y /\ equals = 0) \/ (x = y /\ equals = 1)
 var z : Z
 begin
 	if x - y != 0 then
-	begin
+	    begin
 		z := 0
-	end
+	    end
 	else
-	begin
+	    begin
 		z := 1
-	end
+	    end
 	
 	{ (x != y /\ z = 0) \/ (x = y /\ z = 1) }
 	equals := z
