@@ -5,13 +5,13 @@ var z : Z
     begin
 	
     if p = 1 then
-    begin
-        z := x
-    end
+        begin
+            z := x
+        end
     else
-    begin
-        z := y
-    end
+        begin
+            z := y
+        end
 	
     { (p = 0 /\ z = y) \/ (p = 1 /\ z = x) }
     ifelse := z
