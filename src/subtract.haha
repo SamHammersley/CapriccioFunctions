@@ -2,7 +2,7 @@ function subtract (x : Z, y : Z) : Z
 precondition y >= 0
 postcondition subtract = x - y
 var ans : Z
-	n : Z
+    n : Z
 begin
 	ans := x
 	{y >= 0 /\ ans = x}
@@ -14,7 +14,7 @@ begin
 		ans := ans - 1
 		{y >= 0 /\ n > 0 /\ ans - n + 1 = x - y}
 		n := n - 1
-		{y >= 0 /\ n >= 0 /\ ans - n = x- y}
+		{y >= 0 /\ n >= 0 /\ ans - n = x - y}
 		skip
 	end
 	{n = 0 /\ ans = x - y}
