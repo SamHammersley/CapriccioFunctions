@@ -1,0 +1,3 @@
+(ifelse (equals 720
+  (factorial 6)
+))
