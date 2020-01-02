@@ -1,4 +1,4 @@
-function lessThan( a : Z, b : Z ) : Z
+function lessthan( a : Z, b : Z ) : Z
 precondition a >= 0 /\ b >= 0
 var x : Z
 	y : Z
@@ -25,7 +25,7 @@ begin
 	else 
 		p := 0
 	{ (x = 0 /\ y != 0 /\ p = 1) \/ p = 0 }
-	lessThan := p
-	{ (x = 0 /\ y != 0 /\ lessThan = 1) \/ lessThan = 0 }
+	lessthan := p
+	{ (x = 0 /\ y != 0 /\ lessthan = 1) \/ lessthan = 0 }
 	skip
 end

@@ -1,3 +1,0 @@
-(ifelse (equals 1
-  (equals 94 94)
-))
