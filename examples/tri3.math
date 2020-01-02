@@ -1,3 +1,1 @@
-(ifelse (equals 2
-  (tri 15)
-))
+(equals 120 (tri 15))

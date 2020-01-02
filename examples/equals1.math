@@ -1,3 +1,1 @@
-(ifelse (equals 0
-  (equals 10 15)
-))
+(equals 0 (equals 10 15))

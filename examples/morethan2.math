@@ -1,3 +1,1 @@
-(ifelse (equals 0
-  (morethan 5 67)
-))
+(equals 0 (morethan 5 67))

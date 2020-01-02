@@ -1,3 +1,1 @@
-(ifelse (equals 1
-  (modulo 124 3)
-))
+(equals 1 (modulo 124 3))

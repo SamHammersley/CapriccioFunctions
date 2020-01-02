@@ -1,3 +1,1 @@
-(ifelse (equals 120
-  (factorial 5)
-))
+(equals 120 (factorial 5))

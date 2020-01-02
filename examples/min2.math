@@ -1,3 +1,1 @@
-(ifelse (equals 6
-  (min 94 6)
-))
+(equals 6 (min 94 6))

@@ -1,3 +1,1 @@
-(ifelse (equals 959
-  (sum 45 914)
-))
+(equals 959 (sum 45 914))

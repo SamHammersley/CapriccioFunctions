@@ -1,3 +1,1 @@
-(ifelse (equals 1
-  (quotient 94 63)
-))
+(equals 1 (quotient 94 63))

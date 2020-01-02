@@ -1,3 +1,1 @@
-(ifelse (equals 52
-  (max 52 18)
-))
+(equals 52 (max 52 18))

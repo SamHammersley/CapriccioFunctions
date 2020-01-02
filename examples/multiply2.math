@@ -1,3 +1,1 @@
-(ifelse (equals 1140
-  (multiply 20 57)
-))
+(equals 1140 (multiply 20 57))

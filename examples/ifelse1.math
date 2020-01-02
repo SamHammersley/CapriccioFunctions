@@ -1,3 +1,1 @@
-(ifelse (equals 2
-  (ifelse 1 2 5)
-))
+(equals 2 (ifelse 1 2 5))

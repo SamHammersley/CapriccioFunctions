@@ -1,3 +1,1 @@
-(ifelse (equals 1
-  (lessthan 1 6)
-))
+(equals 1 (lessthan 1 6))

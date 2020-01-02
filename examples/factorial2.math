@@ -1,3 +1,1 @@
-(ifelse (equals 2
-  (factorial 2)
-))
+(equals 2 (factorial 2))

@@ -1,3 +1,1 @@
-(ifelse (equals 98
-  (sum 67 31)
-))
+(equals 98 (sum 67 31))

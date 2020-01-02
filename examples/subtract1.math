@@ -1,3 +1,1 @@
-(ifelse (equals 12
-  (subtract 24 12)
-))
+(equals 12 (subtract 24 12))

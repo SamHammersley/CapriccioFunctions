@@ -1,3 +1,1 @@
-(ifelse (equals 20418
-  (multiply 246 83)
-))
+(equals 20418 (multiply 246 83))
