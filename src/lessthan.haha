@@ -8,8 +8,6 @@ begin
 	{ a >= 0 /\ b >= 0 /\ x = a }
 	y := b
 	{ a >= 0 /\ b >= 0 /\ x = a /\ y = b }
-	p := 0
-	{ a >= 0 /\ b >= 0 /\ x = a /\ y = b /\ p = 0 }
 	while x != 0 /\ y != 0 do
 	invariant a - x = b - y
 	begin
@@ -19,13 +17,13 @@ begin
 		{ a - x = b - y }
 		skip
 	end
-	{ a - x = b - y /\ (x = 0 \/ y = 0) }
-	if (x = 0 /\ y != 0) then 
-		p := 1 
-	else 
+	{ a - x = b - y /\ x = 0 \/ y = 0 }
+	if (x = 0 /\ y != 0) then
+		p := 1
+	else
 		p := 0
-	{ (x = 0 /\ y != 0 /\ p = 1) \/ p = 0 }
+	{ (x = 0 /\ y != 0 /\ p = 1) \/ (x != 0 \/ y = 0 /\ p = 0) }
 	lessthan := p
-	{ (x = 0 /\ y != 0 /\ lessthan = 1) \/ lessthan = 0 }
+	{ (x = 0 /\ y != 0 /\ lessthan = 1) \/ (x != 0 \/ y = 0 /\ lessthan = 0) }
 	skip
 end
