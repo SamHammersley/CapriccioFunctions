@@ -10,21 +10,21 @@ begin
     { n > 0 /\ a = 1 /\ b = 1 }
     c := 1
     { n > 0 /\ a = 1 /\ b = 1 /\ c = 1 }
-    while a < n do
-    invariant n > 0 /\ a >= 1 /\ b >= 1 /\ c >= 1 /\ b = a * c // n! = (n - 1)! * counter
+    while a != n do
+    invariant b = a * c // n! = (n - 1)! * counter
     begin
         c := c * a
-        { n > 0 /\ a >= 1 /\ b >= 1 /\ c >= 1 /\ b = a * (c / a) }
+        { b = a * (c / a) }
         //{ n > 0 /\ a >= 1 /\ b >= 1 /\ c >= 1 /\ c = (b / a) * a }
         a := a + 1
-        { n > 0 /\ a >= 1 /\ b >= 1 /\ c >= 1 /\ b = (a-1) * (c / (a-1)) }
+        { b = (a-1) * (c / (a-1)) }
         //{ n > 0 /\ a >= 1 /\ b >= 1 /\ c >= 1 /\ c = (b / (a-1)) * (a-1) }
         b := b * a
-        { n > 0 /\ a >= 1 /\ b >= 1 /\ c >= 1 /\ b = (a-1) * (c / (a-1)) * a }
+        { b = (a-1) * (c / (a-1)) * a }
         //{ n > 0 /\ a >= 1 /\ b >= 1 /\ c >= 1 /\ c = b / a }
         skip
     end
-    { n > 0 /\ a >= n /\ b = a * c }
+    { a = n /\ b = a * c }
     factorial := b
     { factorial = a * c }
     skip
